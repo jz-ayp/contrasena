@@ -12,7 +12,7 @@ cases = [
     ["2021", False],
     ["AnsiEdad99", True],
     ["abcdefghijk", False],
-    ["abcdEfghiJk", False],
+    ["abcdEfghiJk", True],
     ["0abcdEEfghijk", False],
     ["1AbcAefghijk", False],
     ["3abcdefghijk", False],
@@ -26,13 +26,13 @@ cases = [
 output = {}
 tests = []
 
-for case in cases:
+for i, case in enumerate(cases, start=1):
     inp, outp = case
     if outp:
         outp = "^(?=.*(sí|si) )(?!.*no ).*"
     else:
         outp = "^(?!.*(sí|si) )(?=.*no ).*"
-    name = inp
+    name = f"Test{i:02d}: {inp}"
     entry = {
         "name": name,
         "setup": "",

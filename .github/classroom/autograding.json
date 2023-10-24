@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "2021",
+      "name": "Test01: 2021",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "2021",
@@ -11,7 +11,7 @@
       "points": 1
     },
     {
-      "name": "AnsiEdad99",
+      "name": "Test02: AnsiEdad99",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "AnsiEdad99",
@@ -21,7 +21,7 @@
       "points": 1
     },
     {
-      "name": "abcdefghijk",
+      "name": "Test03: abcdefghijk",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "abcdefghijk",
@@ -31,17 +31,17 @@
       "points": 1
     },
     {
-      "name": "abcdEfghiJk",
+      "name": "Test04: abcdEfghiJk",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "abcdEfghiJk",
-      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "output": "^(?=.*(s\u00ed|si) )(?!.*no ).*",
       "comparison": "regex",
       "timeout": 1,
       "points": 1
     },
     {
-      "name": "0abcdEEfghijk",
+      "name": "Test05: 0abcdEEfghijk",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "0abcdEEfghijk",
@@ -51,7 +51,7 @@
       "points": 1
     },
     {
-      "name": "1AbcAefghijk",
+      "name": "Test06: 1AbcAefghijk",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "1AbcAefghijk",
@@ -61,7 +61,7 @@
       "points": 1
     },
     {
-      "name": "3abcdefghijk",
+      "name": "Test07: 3abcdefghijk",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "3abcdefghijk",
@@ -71,7 +71,7 @@
       "points": 1
     },
     {
-      "name": "5abcdefGijK",
+      "name": "Test08: 5abcdefGijK",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "5abcdefGijK",
@@ -81,7 +81,7 @@
       "points": 1
     },
     {
-      "name": "9abcdEFhijk",
+      "name": "Test09: 9abcdEFhijk",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "9abcdEFhijk",
@@ -91,7 +91,7 @@
       "points": 1
     },
     {
-      "name": "7abCDefghijk",
+      "name": "Test10: 7abCDefghijk",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "7abCDefghijk",
@@ -101,7 +101,7 @@
       "points": 1
     },
     {
-      "name": "A1$Ea_aaA",
+      "name": "Test11: A1$Ea_aaA",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "A1$Ea_aaA",
@@ -111,7 +111,7 @@
       "points": 1
     },
     {
-      "name": "_$0=R/#&(W",
+      "name": "Test12: _$0=R/#&(W",
       "setup": "",
       "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "_$0=R/#&(W",
