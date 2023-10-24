@@ -1,42 +1,122 @@
 {
   "tests": [
     {
-      "name": "no_bisiesto",
+      "name": "2021",
       "setup": "",
-      "run": "LANG=en_US.utf8 timeout 1m python3 bisiesto.py",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
       "input": "2021",
-      "output": "no",
-      "comparison": "included",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
       "timeout": 1,
       "points": 1
     },
     {
-      "name": "bisiesto_no_secular",
+      "name": "AnsiEdad99",
       "setup": "",
-      "run": "LANG=en_US.utf8 timeout 1m python3 bisiesto.py",
-      "input": "2020",
-      "output": "s\u00ed",
-      "comparison": "included",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "AnsiEdad99",
+      "output": "^(?=.*(s\u00ed|si) )(?!.*no ).*",
+      "comparison": "regex",
       "timeout": 1,
       "points": 1
     },
     {
-      "name": "bisiesto_secular",
+      "name": "abcdefghijk",
       "setup": "",
-      "run": "LANG=en_US.utf8 timeout 1m python3 bisiesto.py",
-      "input": "2000",
-      "output": "s\u00ed",
-      "comparison": "included",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "abcdefghijk",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
       "timeout": 1,
       "points": 1
     },
     {
-      "name": "secular_no_bisiesto",
+      "name": "abcdEfghiJk",
       "setup": "",
-      "run": "LANG=en_US.utf8 timeout 1m python3 bisiesto.py",
-      "input": "2100",
-      "output": "no",
-      "comparison": "included",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "abcdEfghiJk",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "0abcdEEfghijk",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "0abcdEEfghijk",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "1AbcAefghijk",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "1AbcAefghijk",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "3abcdefghijk",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "3abcdefghijk",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "5abcdefGijK",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "5abcdefGijK",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "9abcdEFhijk",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "9abcdEFhijk",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "7abCDefghijk",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "7abCDefghijk",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "A1$Ea_aaA",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "A1$Ea_aaA",
+      "output": "^(?!.*(s\u00ed|si) )(?=.*no ).*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "_$0=R/#&(W",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 contrasena.py",
+      "input": "_$0=R/#&(W",
+      "output": "^(?=.*(s\u00ed|si) )(?!.*no ).*",
+      "comparison": "regex",
       "timeout": 1,
       "points": 1
     }
