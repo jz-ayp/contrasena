@@ -14,7 +14,7 @@ def verificar(contrasena):
         # ¿Es letra?
         if letra.upper() != letra.lower():
             # ¿Es mayúscula?
-            if letra = letra.upper():
+            if letra == letra.upper():
                 mayus += 1
     if mayus < 2:
         error = True
