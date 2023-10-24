@@ -1,0 +1,28 @@
+name: GitHub Classroom Workflow
+
+on:
+  push:
+    branches:
+      - '*'
+      - '!feedback'
+    paths:
+      - 'contrasena.py'
+
+  # Allows this workflow to be run manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  grade:
+    name: Autograding
+    if: ${{ !github.event.repository.is_template }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: education/autograding@v1
+    env:
+      LANG: C.UTF-8

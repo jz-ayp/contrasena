@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "no_bisiesto",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 bisiesto.py",
+      "input": "2021",
+      "output": "no",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "bisiesto_no_secular",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 bisiesto.py",
+      "input": "2020",
+      "output": "s\u00ed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "bisiesto_secular",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 bisiesto.py",
+      "input": "2000",
+      "output": "s\u00ed",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "secular_no_bisiesto",
+      "setup": "",
+      "run": "LANG=en_US.utf8 timeout 1m python3 bisiesto.py",
+      "input": "2100",
+      "output": "no",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
